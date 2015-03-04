@@ -2,9 +2,15 @@ doctype html
 html(lang='en')
   head
     meta(charset='utf-8')
-    title Prototype
+    title Stock Quote
     link(rel='stylesheet', href='/style.css')
   body
-    h1 Hello, World
-    script(src='/vendor/jquery/dist/jquery.js')
+    .row
+      h2 Companies Stock Market Quote
+      input#symbol.form-control(type='text', name='symbol', placeholder='Enter Symbol')
+      button#getquote(type='button') Get Quote
+    .row
+      #messages
+      
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
     script(src='/main.js')
